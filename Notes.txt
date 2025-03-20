@@ -1,0 +1,3 @@
+- extraction de notes très très long
+- avant : encodage basique
+  après : dico de mapping pour garder les relations entre les notes
