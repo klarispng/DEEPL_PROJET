@@ -1,3 +1,11 @@
 - extraction de notes très très long
 - avant : encodage basique
   après : dico de mapping pour garder les relations entre les notes
+
+1er entrainement val_loss de plus de 300 = pue sa mère 
+test 1 = 50 epochs + non normalisé => mélodie qui passe mais très grave 
+test 2 = 200 epochs + non normalisé => ensemble d'accords très graves et beaucoup de répétitions
+test 3 = 200 epochs + normalisé => pleins de notes qui se font tej car elles sont trop graves : se font bouffer par les -1 i guess
+test v2 = test sur 10 compositeurs (toutes chansons) + 50 époques = nul nul  nul que des répett (l'entrainement a duré plus de 13h !!!!!)
+v3 = 8 temps au lieu de 200 parce que c'est souvent une mesure en gros
+v4 = on rebascule qu'avec des int et on ne prend que la première note d'un accord pour faire une mélodie
